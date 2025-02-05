@@ -1,4 +1,4 @@
-import proptypes from "prop-types";
+import React from "react";
 import Navbar from "../components/Navbar";
 
 const MainLayout = ({ children }) => {
@@ -11,9 +11,5 @@ const MainLayout = ({ children }) => {
     </>
   );
 };
-
-MainLayout.propTypes = {
-  children: proptypes.node.isRequired,
-}
 
 export default MainLayout;

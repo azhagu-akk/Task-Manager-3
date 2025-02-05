@@ -64,7 +64,7 @@ const Tasks = () => {
                   className="bg-white my-4 p-4 text-gray-600 rounded-md shadow-md"
                 >
                   <div className="flex">
-                    <span className="font-bold">Task #{index + 1}</span>
+                    <span className="font-medium">Task #{index + 1}</span>
 
                     <Tooltip text={"Edit this task"} position={"top"}>
                       <Link

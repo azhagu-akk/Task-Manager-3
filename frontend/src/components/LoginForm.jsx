@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import validateManyFields from "../validations";
 import Input from "./utils/Input";
@@ -6,7 +6,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { postLoginData } from "../redux/actions/authActions";
 import Loader from "./utils/Loader";
 import { useEffect } from "react";
-import proptypes  from "prop-types";
 
 const LoginForm = ({ redirectUrl }) => {
   const [formErrors, setFormErrors] = useState({});
@@ -59,13 +58,13 @@ const LoginForm = ({ redirectUrl }) => {
 
   return (
     <>
-      <form className="m-auto my-16 max-w-[500px]  bg-white p-8 border-2 shadow-md rounded-md">
+      <form className="m-auto my-16 max-w-[500px] bg-white p-8 border-2 shadow-md rounded-md">
         {loading ? (
           <Loader />
         ) : (
           <>
-            <h2 className="text-center mb-4 uppercase font-bold">
-              Welcome User, Please login here
+            <h2 className="text-center mb-4">
+              Welcome user, please login here
             </h2>
             <div className="mb-4">
               <label
@@ -79,7 +78,7 @@ const LoginForm = ({ redirectUrl }) => {
                 name="email"
                 id="email"
                 value={formData.email}
-                placeholder="example@email.com"
+                placeholder="youremail@domain.com"
                 onChange={handleChange}
               />
               {fieldError("email")}
@@ -104,15 +103,15 @@ const LoginForm = ({ redirectUrl }) => {
             </div>
 
             <button
-              className="hover:bg-blue-600 text-white px-4 py-2 font-medium bg-blue-400"
+              className="bg-primary text-white px-4 py-2 font-medium hover:bg-primary-dark"
               onClick={handleSubmit}
             >
               Submit
             </button>
 
             <div className="pt-4">
-              <Link to="/signup" className="text-red-400">
-                Don`t have an account? Signup here
+              <Link to="/signup" className="text-blue-400">
+                Don't have an account? Signup here
               </Link>
             </div>
           </>
@@ -121,9 +120,5 @@ const LoginForm = ({ redirectUrl }) => {
     </>
   );
 };
-
-LoginForm.propTypes = {
-  redirectUrl: proptypes.string,
-}
 
 export default LoginForm;

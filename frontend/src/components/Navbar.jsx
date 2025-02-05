@@ -31,14 +31,14 @@ const Navbar = () => {
                 </Link>
               </li>
               <li
-                className="py-2 px-3 cursor-pointer hover:bg-gray-200 text-red-400 transition rounded-sm"
+                className="py-2 px-3 cursor-pointer hover:bg-gray-200 transition rounded-sm"
                 onClick={handleLogoutClick}
               >
                 Logout
               </li>
             </>
           ) : (
-            <li className="py-2 px-3 cursor-pointer text-blue-600 hover:bg-gray-100 transition rounded-sm">
+            <li className="py-2 px-3 cursor-pointer text-primary hover:bg-gray-100 transition rounded-sm">
               <Link to="/login">Login</Link>
             </li>
           )}
@@ -64,18 +64,18 @@ const Navbar = () => {
                 <li className="bg-blue-500 text-white hover:bg-blue-600 font-medium transition py-2 px-3">
                   <Link to="/tasks/add" className="block w-full h-full">
                     {" "}
-                    <i className="fa-solid fa-plus"></i> Add task
+                    <i className="fa-solid fa-plus"></i> Add task{" "}
                   </Link>
                 </li>
                 <li
-                  className="py-2 px-3 cursor-pointer hover:bg-gray-200 text-red-400 transition rounded-sm"
+                  className="py-2 px-3 cursor-pointer hover:bg-gray-200 transition rounded-sm"
                   onClick={handleLogoutClick}
                 >
                   Logout
                 </li>
               </>
             ) : (
-              <li className="py-2 px-3 cursor-pointer text-blue-400 hover:bg-gray-200 transition rounded-sm">
+              <li className="py-2 px-3 cursor-pointer text-primary hover:bg-gray-200 transition rounded-sm">
                 <Link to="/login">Login</Link>
               </li>
             )}
