@@ -1,5 +1,6 @@
 {
   "name": "frontend",
+  "proxy": "https://task-manager-3-aziy.onrender.com",
   "private": true,
   "version": "0.0.0",
   "type": "module",
