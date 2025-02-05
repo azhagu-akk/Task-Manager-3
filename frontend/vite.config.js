@@ -5,14 +5,14 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   server: {
-  //   headers: {
-  //   Content-Type: 'application/javascript'
-  // },
+    //   headers: {
+    //   Content-Type: 'application/javascript'
+    // },
     proxy: {
       "/api": {
-        target: "https://task-manager-3-8qiz.onrender.com", // Your backend server URL
+        target: "https://task-manager-3-aziy.onrender.com", // Your backend server URL
         changeOrigin: true,
-        secure : false,
+        secure: false,
         // rewrite: (path) => path.replace(/^\/api/, ""), // Optional: Remove /api prefix
       },
     },
@@ -35,5 +35,5 @@ export default defineConfig({
   //     },
   //   },
   // },
-  plugins: [react(), tailwindcss(),],
+  plugins: [react(), tailwindcss()],
 });
