@@ -38,7 +38,7 @@ const Navbar = () => {
               </li>
             </>
           ) : (
-            <li className="py-2 px-3 cursor-pointer text-primary hover:bg-gray-100 transition rounded-sm">
+            <li className="py-2 px-3 cursor-pointer text-blue-400 hover:bg-gray-100 transition rounded-sm">
               <Link to="/login">Login</Link>
             </li>
           )}
@@ -75,7 +75,7 @@ const Navbar = () => {
                 </li>
               </>
             ) : (
-              <li className="py-2 px-3 cursor-pointer text-primary hover:bg-gray-200 transition rounded-sm">
+              <li className="py-2 px-3 cursor-pointer text-blue-400 hover:bg-gray-200 transition rounded-sm">
                 <Link to="/login">Login</Link>
               </li>
             )}
