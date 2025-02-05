@@ -110,7 +110,7 @@ const LoginForm = ({ redirectUrl }) => {
             </button>
 
             <div className="pt-4">
-              <Link to="/signup" className="text-blue-400">
+              <Link to="/signup" className="text-red-400">
                 Don't have an account? Signup here
               </Link>
             </div>

@@ -129,14 +129,14 @@ const Task = () => {
                 {mode === "add" ? "Add task" : "Update Task"}
               </button>
               <button
-                className="ml-4 bg-red-500 text-white px-4 py-2 font-medium"
+                className="ml-4 bg-red-400 hover:bg-red-600 text-white px-4 py-2 font-medium"
                 onClick={() => navigate("/")}
               >
                 Cancel
               </button>
               {mode === "update" && (
                 <button
-                  className="ml-4 bg-blue-500 text-white px-4 py-2 font-medium hover:bg-blue-600"
+                  className="ml-4 bg-yellow-500 text-white px-4 py-2 font-medium hover:bg-yellow-600"
                   onClick={handleReset}
                 >
                   Reset

@@ -122,7 +122,7 @@ const SignupForm = () => {
             </button>
 
             <div className="pt-4">
-              <Link to="/login" className="text-blue-400">
+              <Link to="/login" className="text-red-400">
                 Already have an account? Login here
               </Link>
             </div>

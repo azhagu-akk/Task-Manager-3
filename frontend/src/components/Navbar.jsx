@@ -68,7 +68,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li
-                  className="py-2 px-3 cursor-pointer hover:bg-gray-200 transition rounded-sm"
+                  className="py-2 px-3 cursor-pointer text-red-400 hover:bg-gray-200 transition rounded-sm"
                   onClick={handleLogoutClick}
                 >
                   Logout
