@@ -9,7 +9,7 @@ const taskRoutes = require("./routes/taskRoutes");
 const profileRoutes = require("./routes/profileRoutes");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({origin : "*"}));
 
 mongoose
   .connect(process.env.MONGODB_URI)
@@ -19,7 +19,15 @@ mongoose
     process.exit(1);
   });
 
-
+// app.use(
+//   express.static("public", {
+//     setHeaders: (res, path) => {
+//       if (path.endsWith(".js")) {
+//         res.setHeader("Content-Type", "application/javascript");
+//       }
+//     },
+//   })
+// );
 app.use("/api/auth", authRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/profile", profileRoutes);
