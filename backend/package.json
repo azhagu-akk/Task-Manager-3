@@ -4,15 +4,16 @@
   "description": "Task Management Backend",
   "main": "index.js",
   "scripts": {
-    "start" : "nodemon index.js",
-    "dev" : "node index.js",
+    "start": "nodemon index.js",
+    "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-     
+    "build": "bun install && bun run build"
   },
   "author": "Azhagu",
   "license": "MIT",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "bun": "^1.2.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
