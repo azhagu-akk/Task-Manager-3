@@ -6,8 +6,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "dev": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "bun install && bun run build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Azhagu",
   "license": "MIT",
