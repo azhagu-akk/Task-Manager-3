@@ -1,6 +1,6 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL
+  baseURL: "https://task-manager-3-etn5.onrender.com/api/",
 });
 export default api;
