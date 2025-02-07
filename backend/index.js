@@ -22,12 +22,12 @@ app.use("/api/auth", authRoutes);
 app.use("/api/tasks", taskRoutes);
 app.use("/api/profile", profileRoutes);
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.resolve(__dirname, "../frontend/dist")));
-  app.get("*", (req, res) =>
-    res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"))
-  );
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static(path.resolve(__dirname, "../frontend/dist")));
+//   app.get("*", (req, res) =>
+//     res.sendFile(path.resolve(__dirname, "../frontend/dist/index.html"))
+//   );
+// }
 
 const port = process.env.PORT;
 app.listen(port, () => {
