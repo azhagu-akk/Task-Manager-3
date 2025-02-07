@@ -9,7 +9,7 @@ const taskRoutes = require("./routes/taskRoutes");
 const profileRoutes = require("./routes/profileRoutes");
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: "https://taskmanagerapp3.netlify.app/", credentials: true }));
 
 const mongoUrl = process.env.MONGODB_URL;
 mongoose.connect(mongoUrl).then(() => {
