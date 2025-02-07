@@ -1,6 +1,5 @@
 {
   "name": "frontend",
-  "proxy": "https://task-manager-3-um38.onrender.com",
   "private": true,
   "version": "0.0.0",
   "type": "module",
